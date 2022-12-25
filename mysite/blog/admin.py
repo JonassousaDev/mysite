@@ -1,9 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
-
+# models here.
 from .models import Post
-
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title','slug','created_on')
